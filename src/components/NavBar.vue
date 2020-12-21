@@ -1,9 +1,14 @@
 <template>
-  <header id="nav" class="fixed-top nav__transparent">
-    <i
+  <header
+    id="nav"
+    class="fixed-top nav__transparent"
+    :class="{ nav__scrolled: scrolled }"
+  >
+    <!-- <i
       class="fas fa-fire-alt nav-icon"
       style="color: white; font-size: 30px;"
-    ></i>
+    ></i> -->
+    <h5 class="name">Toledo</h5>
     <nav>
       <ul class="nav__links">
         <li class="nav__list">
@@ -24,6 +29,28 @@
 <script>
 export default {
   name: "NavBar",
+  data() {
+    return {
+      scrolled: false,
+      lastScrollPosition: 0,
+    };
+  },
+  methods: {
+    checkScrolled() {
+      const scrollPosition = window.scrollY;
+      if (scrollPosition >= 200) {
+        this.scrolled = true;
+      } else {
+        this.scrolled = false;
+      }
+    },
+  },
+  mounted() {
+    window.addEventListener("scroll", this.checkScrolled);
+  },
+  destroy() {
+    window.removeEventListener("scroll", this.checkScrolled);
+  },
 };
 </script>
 
@@ -83,5 +110,11 @@ button {
 .contact__button:hover {
   color: black;
   border-bottom: 1px white solid;
+}
+
+.name {
+  font-family: "SketsaRamadhan";
+  color: white;
+  font-size: 28px;
 }
 </style>

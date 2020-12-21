@@ -6,12 +6,12 @@
       </h1>
       <div class="social__container">
         <a href="https://www.linkedin.com/in/manueltoledoc/" target="_blank"
-          ><i class="fab fa-linkedin-in fa-5x linkedin"></i
+          ><i class="fab fa-linkedin-in fa-2x linkedin"></i
         ></a>
         <a href="https://github.com/MannyToledoC" target="_blank"
-          ><i class="fab fa-github fa-5x github"></i
+          ><i class="fab fa-github fa-2x github"></i
         ></a>
-        <i class="fas fa-envelope fa-5x email"></i>
+        <i class="fas fa-envelope fa-2x email"></i>
       </div>
     </div>
   </footer>

@@ -74,12 +74,12 @@
 
   <div class="col-lg-4 col-md-6">
     <a href="/projects/resolution" class="card project__card project__anchor">
-      <img
+      <!-- <img
         src="https://picsum.photos/200/300"
         class="card-img-top"
         alt=""
         style="max-height: 300px;"
-      />
+      /> -->
       <div class="card-body">
         <div class="card-title project__title">
           Automatic-Resolution-Changer
@@ -109,12 +109,12 @@
 
   <div class="col-lg-4 col-md-6">
     <a href="/projects/resolution" class="card project__card project__anchor">
-      <img
+      <!-- <img
         src="https://picsum.photos/200/300"
         class="card-img-top"
         alt=""
         style="max-height: 300px;"
-      />
+      /> -->
       <div class="card-body">
         <div class="card-title project__title">
           Automatic-Resolution-Changer
@@ -144,12 +144,12 @@
 
   <div class="col-lg-4 col-md-6">
     <a href="/projects/resolution" class="card project__card project__anchor">
-      <img
+      <!-- <img
         src="https://picsum.photos/200/300"
         class="card-img-top"
         alt=""
         style="max-height: 300px;"
-      />
+      /> -->
       <div class="card-body">
         <div class="card-title project__title">
           Automatic-Resolution-Changer

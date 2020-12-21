@@ -20,6 +20,16 @@ export default {
   -moz-osx-font-smoothing: grayscale;
 }
 
+html {
+  scroll-behavior: smooth;
+}
+
+@font-face {
+  font-family: "SketsaRamadhan";
+  src: local("SketsaRamadhan"),
+    url(./fonts/sketsa_ramadhan/SketsaRamadhan.otf) format("opentype");
+}
+
 ::-webkit-scrollbar {
   width: 0px;
   background: transparent;
