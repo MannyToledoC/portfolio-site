@@ -1,29 +1,44 @@
 <template>
-  <NavBar />
-  <router-view class="default" />
+  <Fire :isLoading="isLoading" />
+  <main v-if="!isLoading">
+    <NavBar />
+    <router-view class="default" />
+  </main>
 </template>
 
 <script>
 import NavBar from "@/components/NavBar.vue";
+import Fire from "@/components/Fire.vue";
 export default {
+  data() {
+    return {
+      isLoading: true,
+    };
+  },
+  mounted() {
+    setTimeout(() => {
+      this.isLoading = false;
+    }, 3250);
+  },
   components: {
     NavBar,
+    Fire,
   },
 };
 </script>
 
 <style>
-* {
-  /* font-family: Avenir, Helvetica, Arial, sans-serif; */
+@font-face {
   font-family: "Dosis";
-  -webkit-font-smoothing: antialiased;
-  -moz-osx-font-smoothing: grayscale;
+  src: local("Dosis"),
+    url(./fonts/Dosis/Dosis-VariableFont_wght.ttf) format("truetype");
 }
 
-@font-face {
-  font-family: "SketsaRamadhan";
-  src: local("SketsaRamadhan"),
-    url(./fonts/sketsa_ramadhan/SketsaRamadhan.otf) format("opentype");
+* {
+  /* font-family: Avenir, Helvetica, Arial, sans-serif; */
+  font-family: "Dosis", sans-serif;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
 }
 
 ::-webkit-scrollbar {
