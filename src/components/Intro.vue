@@ -46,6 +46,6 @@ export default {
 
 .intro__container {
   z-index: 999;
-  /* background-color: rgb(10, 10, 10); */
+  background-color: rgb(10, 10, 10);
 }
 </style>
