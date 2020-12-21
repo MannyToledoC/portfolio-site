@@ -14,6 +14,7 @@ import Intro from "@/components/Intro.vue";
 import Contact from "@/components/Contact.vue";
 export default {
   name: "Home",
+  title: "Manuel Toledo",
   components: {
     Projects,
     Intro,

@@ -34,7 +34,7 @@ export default {
 
 .project__background {
   z-index: 999;
-  padding-top: 60px;
+  padding-top: 70px;
   padding-bottom: 30px;
   background-color: rgb(10, 10, 10);
 }

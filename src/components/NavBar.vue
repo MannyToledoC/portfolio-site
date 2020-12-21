@@ -4,22 +4,26 @@
     class="fixed-top nav__transparent"
     :class="{ nav__scrolled: scrolled }"
   >
-    <!-- <i
+    <i
       class="fas fa-fire-alt nav-icon"
       style="color: white; font-size: 30px;"
-    ></i> -->
-    <h5 class="name">Toledo</h5>
+    ></i>
+    <!-- <h5 class="name">Toledo</h5> -->
     <nav>
       <ul class="nav__links">
         <li class="nav__list">
           <!-- <a href="#home"><router-link to="/">Home</router-link></a> -->
-          <a href="#home">Home</a>
+          <a href="#" v-scroll-to="'#home'">Home</a>
         </li>
-        <li class="nav__list"><a href="#project">Projects</a></li>
+        <li class="nav__list">
+          <a href="#" v-scroll-to="'#project'">Projects</a>
+        </li>
         <li class="nav__list">
           <a href="/resume/Manuel_Toledo_Resume.pdf">Resume</a>
         </li>
-        <li class="nav__list"><a href="#contact">Contact</a></li>
+        <li class="nav__list">
+          <a href="#" v-scroll-to="'#contact'">Contact</a>
+        </li>
       </ul>
     </nav>
     <!-- <a class="cta" href="#"><button class="contact__button">Contact</button></a> -->

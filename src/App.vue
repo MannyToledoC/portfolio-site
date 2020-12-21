@@ -20,10 +20,6 @@ export default {
   -moz-osx-font-smoothing: grayscale;
 }
 
-html {
-  scroll-behavior: smooth;
-}
-
 @font-face {
   font-family: "SketsaRamadhan";
   src: local("SketsaRamadhan"),
