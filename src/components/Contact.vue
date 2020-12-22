@@ -34,32 +34,38 @@ export default {
   color: white;
   margin: 10px;
   margin-left: 0px;
+  transition: all 0.3s ease 0s;
 }
 
 .linkedin:hover {
-  color: #2867b2;
+  color: white;
   cursor: pointer;
+  font-size: 50px;
 }
 
 .github {
   size: 20px;
   color: white;
   margin: 10px;
+  transition: all 0.3s ease 0s;
 }
 
 .github:hover {
-  color: #4078c0;
+  color: white;
   cursor: pointer;
+  font-size: 50px;
 }
 
 .email {
   size: 20px;
   color: white;
   margin: 10px;
+  transition: all 0.3s ease 0s;
 }
 
 .email:hover {
-  color: #4078c0;
+  color: white;
   cursor: pointer;
+  font-size: 50px;
 }
 </style>

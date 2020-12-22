@@ -1,5 +1,5 @@
 <template>
-  <Fire :isLoading="isLoading" />
+  <!-- <Fire :isLoading="isLoading" /> -->
   <main :class="{ render: isLoading }">
     <NavBar />
     <router-view class="default" />
@@ -8,7 +8,7 @@
 
 <script>
 import NavBar from "@/components/NavBar.vue";
-import Fire from "@/components/Fire.vue";
+// import Fire from "@/components/Fire.vue";
 export default {
   data() {
     return {
@@ -18,11 +18,11 @@ export default {
   mounted() {
     setTimeout(() => {
       this.isLoading = false;
-    }, 3250);
+    }, 0);
   },
   components: {
     NavBar,
-    Fire,
+    // Fire,
   },
 };
 </script>

@@ -4,12 +4,12 @@
       href="/projects/RoboticsAcademy"
       class="card project__card project__anchor"
     >
-      <img
+      <!-- <img
         src="/images/recording.gif"
         class="card-img-top"
         alt=""
         style="max-height: 300px;"
-      />
+      /> -->
       <div class="card-body">
         <div class="card-title project__title">
           Robotics Academy
@@ -28,9 +28,13 @@
           worked on for Capstone II. Worked on creating a quiz system for
           instructors and a user management system for admins.
         </p>
-        <div class="project__link">
+        <div class="project__link card-footer">
           <object>
-            <a href="https://roboticsacademy.fiu.edu/" target="_blank">
+            <a
+              class="project__icon"
+              href="https://roboticsacademy.fiu.edu/"
+              target="_blank"
+            >
               <i class="fas fa-share"></i>
             </a>
           </object>
@@ -41,12 +45,12 @@
 
   <div class="col-lg-4 col-md-6">
     <a href="/projects/midas" class="card project__card project__anchor">
-      <img
+      <!-- <img
         src="/images/Sample.gif"
         class="card-img-top"
         alt=""
         style="max-height: 300px;"
-      />
+      /> -->
       <div class="card-body">
         <div class="card-title project__title">
           MIDAS
@@ -61,9 +65,13 @@
           Engineering II. Designed the system using StarUML and implemented
           architectural and design patterns.
         </p>
-        <div class="project__link">
+        <div class="project__link card-footer">
           <object>
-            <a href="https://github.com/MannyToledoC/MIDAS" target="_blank">
+            <a
+              class="project__icon"
+              href="https://github.com/MannyToledoC/MIDAS"
+              target="_blank"
+            >
               <i class="fab fa-github github"></i>
             </a>
           </object>
@@ -93,9 +101,10 @@
         <p class="project__info">
           Changes monitor resolution once a desired application runs or closes
         </p>
-        <div class="project__link">
+        <div class="project__link card-footer">
           <object>
             <a
+              class="project__icon"
               href="https://github.com/MannyToledoC/Automatic-Resolution-Changer"
               target="_blank"
             >
@@ -128,9 +137,10 @@
         <p class="project__info">
           Changes monitor resolution once a desired application runs or closes
         </p>
-        <div class="project__link">
+        <div class="project__link card-footer">
           <object>
             <a
+              class="project__icon"
               href="https://github.com/MannyToledoC/Automatic-Resolution-Changer"
               target="_blank"
             >
@@ -163,9 +173,10 @@
         <p class="project__info">
           Changes monitor resolution once a desired application runs or closes
         </p>
-        <div class="project__link">
+        <div class="project__link card-footer">
           <object>
             <a
+              class="project__icon"
               href="https://github.com/MannyToledoC/Automatic-Resolution-Changer"
               target="_blank"
             >
@@ -186,7 +197,8 @@ export default {
 
 <style scoped>
 .project__card {
-  min-height: 400px;
+  /* min-height: 400px; */
+  min-height: 250px;
   margin-bottom: 30px;
   background-color: rgb(24, 24, 24);
   color: white;
@@ -200,11 +212,6 @@ export default {
   text-align: left;
   font-size: 20px;
 }
-
-/* .project__link {
-  grid-column: 2/3;
-  grid-row: 2/3;
-} */
 
 .project__badge {
   font-family: "Dosis";
@@ -226,16 +233,18 @@ export default {
 
 .project__link {
   text-align: right;
+  transition: all 0.3s ease 0s;
 }
 
 .project__card:hover {
   cursor: pointer;
   transform: scale(1.1);
   transition: all 0.3s ease 0s;
+  z-index: 2;
 }
 
 .project__link:hover {
-  color: rgb(10, 10, 10);
+  text-decoration: none;
 }
 
 .project__anchor:hover {
@@ -243,6 +252,18 @@ export default {
   text-decoration: none;
 }
 
+.project__icon {
+  transition: all 0.3s ease 0s;
+}
+
+.project__icon:hover {
+  color: white;
+  font-size: 25px;
+}
+.card-footer {
+  background: transparent;
+}
+/* make link icon grow */
 a {
   color: white;
 }

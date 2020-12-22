@@ -3,7 +3,7 @@
     class="attempt"
     color="#dedede"
     :particleOpacity="0.7"
-    :particlesNumber="170"
+    :particlesNumber="50"
     shapeType="circle"
     :particleSize="4"
     linesColor="#dedede"
@@ -17,6 +17,7 @@
     :clickEffect="true"
     clickMode="push"
   >
+    <!-- color="#dedede" -->
   </vue-particles>
 </template>
 

@@ -4,10 +4,12 @@
     class="fixed-top nav__transparent"
     :class="{ nav__scrolled: scrolled }"
   >
-    <i
-      class="fas fa-fire-alt nav-icon"
-      style="color: white; font-size: 30px;"
-    ></i>
+    <a href="#" v-scroll-to="'#home'">
+      <i
+        class="fas fa-fire-alt nav-icon"
+        style="color: white; font-size: 30px;"
+      ></i>
+    </a>
     <!-- <h5 class="name">Toledo</h5> -->
     <nav>
       <ul class="nav__links">
@@ -101,7 +103,8 @@ button {
 }
 
 .nav__links li a:hover {
-  color: rgb(10, 10, 10);
+  color: white;
+  font-size: 20px;
   text-decoration: none;
 }
 
