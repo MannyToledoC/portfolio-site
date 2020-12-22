@@ -21,7 +21,7 @@
           <a href="#" v-scroll-to="'#project'">Projects</a>
         </li>
         <li class="nav__list">
-          <a href="/resume/Manuel_Toledo_Resume.pdf">Resume</a>
+          <a href="./Manuel_Toledo_Resume.pdf">Resume</a>
         </li>
         <li class="nav__list">
           <a href="#" v-scroll-to="'#contact'">Contact</a>
