@@ -1,7 +1,8 @@
 <template>
   <div class="col-lg-4 col-md-6">
     <a
-      href="/projects/RoboticsAcademy"
+      href="https://roboticsacademy.fiu.edu/"
+      target="_blank"
       class="card project__card project__anchor"
     >
       <!-- <img
@@ -44,7 +45,11 @@
   </div>
 
   <div class="col-lg-4 col-md-6">
-    <a href="/projects/midas" class="card project__card project__anchor">
+    <a
+      href="https://github.com/MannyToledoC/MIDAS"
+      target="_blank"
+      class="card project__card project__anchor"
+    >
       <!-- <img
         src="/images/Sample.gif"
         class="card-img-top"
@@ -81,7 +86,11 @@
   </div>
 
   <div class="col-lg-4 col-md-6">
-    <a href="/projects/resolution" class="card project__card project__anchor">
+    <a
+      href="https://github.com/MannyToledoC/Automatic-Resolution-Changer"
+      target="_blank"
+      class="card project__card project__anchor"
+    >
       <!-- <img
         src="https://picsum.photos/200/300"
         class="card-img-top"
@@ -99,7 +108,9 @@
           <span class="badge badge-dark lang-badge">Processes</span>
         </div>
         <p class="project__info">
-          Changes monitor resolution once a desired application runs or closes
+          Changes monitor resolution once a desired application runs or closes.
+          Incorporated libraries to streamline functionality. Stored user input
+          in a local JSON file.
         </p>
         <div class="project__link card-footer">
           <object>
@@ -117,7 +128,11 @@
   </div>
 
   <div class="col-lg-4 col-md-6">
-    <a href="/projects/resolution" class="card project__card project__anchor">
+    <a
+      href="https://github.com/MannyToledoC/Weather"
+      target="_blank"
+      class="card project__card project__anchor"
+    >
       <!-- <img
         src="https://picsum.photos/200/300"
         class="card-img-top"
@@ -126,22 +141,24 @@
       /> -->
       <div class="card-body">
         <div class="card-title project__title">
-          Automatic-Resolution-Changer
+          Weather
         </div>
         <div class="project__badge">
-          <span class="badge badge-dark lang-badge">Python</span>
-          <span class="badge badge-dark lang-badge">PySimpleGUI</span>
-          <span class="badge badge-dark lang-badge">QRes</span>
-          <span class="badge badge-dark lang-badge">Processes</span>
+          <span class="badge badge-dark lang-badge">Java</span>
+          <span class="badge badge-dark lang-badge">OpenWeatherAPI</span>
+          <span class="badge badge-dark lang-badge">IPAPI</span>
+          <span class="badge badge-dark lang-badge">GSON</span>
         </div>
         <p class="project__info">
-          Changes monitor resolution once a desired application runs or closes
+          A desktop application that displays user weather and location
+          information. Used two different apis to determine nessary user
+          information while using GSON to manipulate the json replies.
         </p>
         <div class="project__link card-footer">
           <object>
             <a
               class="project__icon"
-              href="https://github.com/MannyToledoC/Automatic-Resolution-Changer"
+              href="https://github.com/MannyToledoC/Weather"
               target="_blank"
             >
               <i class="fab fa-github github"></i>
@@ -153,7 +170,7 @@
   </div>
 
   <div class="col-lg-4 col-md-6">
-    <a href="/projects/resolution" class="card project__card project__anchor">
+    <div class="card project__card project__anchor in__progress">
       <!-- <img
         src="https://picsum.photos/200/300"
         class="card-img-top"
@@ -162,30 +179,22 @@
       /> -->
       <div class="card-body">
         <div class="card-title project__title">
-          Automatic-Resolution-Changer
+          Henry Website
         </div>
         <div class="project__badge">
-          <span class="badge badge-dark lang-badge">Python</span>
-          <span class="badge badge-dark lang-badge">PySimpleGUI</span>
-          <span class="badge badge-dark lang-badge">QRes</span>
-          <span class="badge badge-dark lang-badge">Processes</span>
+          <span class="badge badge-dark lang-badge">HTML</span>
+          <span class="badge badge-dark lang-badge">CSS</span>
+          <span class="badge badge-dark lang-badge">JavaScript</span>
+          <span class="badge badge-dark lang-badge">jQuery</span>
+          <span class="badge badge-dark lang-badge">MySQL</span>
         </div>
         <p class="project__info">
-          Changes monitor resolution once a desired application runs or closes
+          A web application that pulls Book data from a local database. Utilizes
+          node.js and express.js to deploy on a local machine. Retrieves stored
+          books using SQL queries.
         </p>
-        <div class="project__link card-footer">
-          <object>
-            <a
-              class="project__icon"
-              href="https://github.com/MannyToledoC/Automatic-Resolution-Changer"
-              target="_blank"
-            >
-              <i class="fab fa-github github"></i>
-            </a>
-          </object>
-        </div>
       </div>
-    </a>
+    </div>
   </div>
 </template>
 
@@ -263,7 +272,11 @@ export default {
 .card-footer {
   background: transparent;
 }
-/* make link icon grow */
+
+.in__progress {
+  cursor: crosshair;
+}
+
 a {
   color: white;
 }

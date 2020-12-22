@@ -14,6 +14,12 @@
         <i class="fas fa-envelope fa-2x email"></i>
       </div>
     </div>
+    <div class="madeby__container">
+      <small class="contact__madeby"
+        >© Manuel Toledo. All Rights Reserved</small
+      >
+      <small class="contact__madeby">Made with Vue.js and Boostrap 5</small>
+    </div>
   </footer>
 </template>
 
@@ -67,5 +73,14 @@ export default {
   color: white;
   cursor: pointer;
   font-size: 50px;
+}
+.madeby__container {
+  display: flex;
+  align-items: center;
+  flex-direction: column;
+  padding-bottom: 30px;
+}
+.contact__madeby {
+  color: white;
 }
 </style>
