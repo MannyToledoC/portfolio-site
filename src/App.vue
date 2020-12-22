@@ -1,6 +1,6 @@
 <template>
   <Fire :isLoading="isLoading" />
-  <main v-if="!isLoading">
+  <main :class="{ render: isLoading }">
     <NavBar />
     <router-view class="default" />
   </main>
@@ -41,6 +41,13 @@ export default {
   -moz-osx-font-smoothing: grayscale;
 }
 
+.render {
+  opacity: 0;
+  visibility: hidden;
+  height: 100%;
+  overflow-y: hidden;
+}
+
 ::-webkit-scrollbar {
   width: 0px;
   background: transparent;
@@ -48,7 +55,6 @@ export default {
 
 .default {
   background: #111111;
-  font-family: "Dosis";
 }
 
 .title {

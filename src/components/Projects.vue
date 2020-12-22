@@ -1,7 +1,7 @@
 <template>
-  <div id="project" class="projects__container">
+  <div class="projects__container">
     <div class="project__background">
-      <h1 class="title" style="padding-bottom: 5vh;">Projects</h1>
+      <h1 id="project" class="title" style="padding-bottom: 5vh;">Projects</h1>
 
       <div class="container-fluid" style="max-width: 1700px;">
         <div class="projects justify-content-center row ">
