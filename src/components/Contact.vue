@@ -18,7 +18,7 @@
       <small class="contact__madeby"
         >© Manuel Toledo. All Rights Reserved</small
       >
-      <small class="contact__madeby">Made with Vue.js and Boostrap 5</small>
+      <small class="contact__madeby">Powered by Vue.js and Boostrap 5</small>
     </div>
   </footer>
 </template>
